@@ -22,7 +22,7 @@ const Header = () => {
   });
 
   return (
-    <div className="bg-black py-[7%] w-screen pt-20 ">
+    <div className="bg-black py-[7%] w-screen pt-20" style={{background: "radial-gradient(44.48% 44.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)"}}>
       <div className="flex flex-col justify-center items-center text-white ">
         <h1 className="text-[37px] md:text-[5rem] font-medium text-center">
           The Fastest Software

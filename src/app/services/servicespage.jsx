@@ -26,7 +26,7 @@ const uiuxIcon = (
 
 const Services = () => {
   return (
-    <div className="bg-black min-h-screen w-full flex flex-col justify-center items-center relative overflow-hidden">
+    <div className="bg-black min-h-screen w-full flex flex-col justify-center items-center relative overflow-hidden"  >
       <Head>
         <title>Our Services</title>
       </Head>
@@ -43,7 +43,7 @@ const Services = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 z-10 relative">
         {/* Service Column 1 */}
         <div>
-          <h2 className="text-white text-3xl font-semibold mb-4">
+          <h2 className="text-white text-3xl mb-4">
             {webIcon}Web Development
           </h2>
           <ul className="list-disc list-inside text-white">

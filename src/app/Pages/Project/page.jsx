@@ -2,7 +2,7 @@ import "./projectspage.css";
 
 function Projectpage() {
   return (
-    <div className="mx-6 mt-10 sm:mx-40 lg:mx-20 text-gray-200 lg:mt-10">
+    <div className="mx-6 mt-10 sm:mx-40 lg:mx-20 text-gray-200 lg:mt-10" style={{background: "radial-gradient(44.48% 44.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)"}}>
       <p className="text-center text-2xl font-bold lg:text-5xl ">
         Projects Lorem, ipsum dolor.
       </p>

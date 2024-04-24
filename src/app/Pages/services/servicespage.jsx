@@ -26,18 +26,17 @@ const uiuxIcon = (
 
 const Services = () => {
   return (
-    <div className="bg-black min-h-screen w-full flex flex-col justify-center items-center relative overflow-hidden">
+    <div className="min-h-screen w-full flex flex-col justify-center items-center relative overflow-hidden" >
       <Head>
         <title>Our Services</title>
       </Head>
 
       {/* Purple glow effect */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full h-96 w-96 opacity-50 z-0"
-           style={{ background: 'radial-gradient(circle, rgba(128,0,128,0.8), rgba(0,0,0,0.8))' }}>
-      </div>
+  
 
       {/* Heading */}
       <h1 className="text-white text-5xl font-bold mb-12 z-10 relative">Our Services</h1>
+      <div style={{background: "radial-gradient(44.48% 44.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)"}}>
 
       {/* Services Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 z-10 relative">
@@ -88,6 +87,7 @@ const Services = () => {
             <li>Managed Cloud Services</li>
           </ul>
         </div>
+      </div>
       </div>
     </div>
   );

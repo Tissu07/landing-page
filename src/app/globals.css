@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  background: repeating-radial-gradient(circle, rgb(55, 0, 55),rgb(40, 0, 40),rgb(20, 0, 20), black);
-}
-
 .service-icon {
   width: 28px;
   height: 28px;
