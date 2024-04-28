@@ -1,3 +1,4 @@
+"use client";
 import "./projectspage.css";
 import Image from "next/image";
 
@@ -11,7 +12,10 @@ function Projectpage() {
           opacity: "0.85",
       }}
     >
-      <p className="md:text-center mx-4 text-3xl font-bold lg:text-5xl pb-3 ">
+      
+      <p className="md:text-center mt-2 mx-4 text-lg lg:text-2xl md:mx-40 md:mb-[-30px] ">
+        Lorem ipsum dolor sit amet, consectetur
+
       </p>
       <div className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]">
         <p className="md:text-center mx-4 text-3xl font-bold lg:text-5xl pb-3">
@@ -53,68 +57,72 @@ function Projectpage() {
             </div>
           </div>
 
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between">
+        <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between ">
           <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">
-              Bid-Bazar<br />
+              Lorem ipsum <br />
+              dolor sit.
             </p>
-            <p className="my-8 text-lg lg:text-xl">
-              A platform where buyers and sellers can congregate for the purpose of seamless bidding and selling across a wide spectrum of items.
+            <p className="my-8 text-lg lg:text-xl  ">
+              Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Pariatur, quisquam.
             </p>
-            <p className="text-lg lg:text-xl hidden md:block">
+            <p className=" text-lg lg:text-xl hidden md:block ">
+              Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum
+              dolor sit
             </p>
+
             <a href="https://bid-bazaar-frontend.vercel.app/" target="_blank" rel="noopener noreferrer">
           <button className="mt-4 relative bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">
          Click
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
         </button>
          </a>
+
           </div>
 
           <div className="mt-4 relative">
             <Image
-              className="object-cover h-[12rem] md:h-[140%] mx-auto"
-              src="/images1/Prabhat_Website.jpg" // Adjusted path
+              className="object-cover h-[12rem] md:h-[140%] mx-auto "
+              src="/images/project1.jpg"
               alt=""
               priority={true}
               width={500}
               height={500}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
           </div>
         </div>
 
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row md:justify-between">
+        <div className="mt-20 md:mt-60 flex flex-col md:flex-row md:justify-between ">
           <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">
-              LeashPay<br />
+              Lorem ipsum <br />
+              dolor sit.
             </p>
-            <p className="my-8 text-lg lg:text-xl">
-              Regardless of the size of your business, LeashPay offers everything software and API needed to build a world-class payments experiences.
+            <p className="my-8 text-lg lg:text-xl  ">
+              Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Pariatur, quisquam.
             </p>
-            <p className="text-lg lg:text-xl hidden md:block">
+            <p className=" text-lg lg:text-xl  hidden md:block">
+              Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum
+              dolor sit
             </p>
-            <a href="https://leashpay.netlify.app" target="_blank" rel="noopener noreferrer">
-          <button className="mt-4 relative bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">
-         Click
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
-        </button>
-         </a>
           </div>
 
-          
           <div className="relative">
             <Image
-              className="object-cover h-[12rem] md:h-[140%] mx-auto"
-              src="/images1/zack_website.jpg" // Adjusted path
+              className="object-cover h-[12rem] md:h-[140%] mx-auto "
+              src="/images/project1.jpg"
               alt=""
               priority={true}
               width={500}
               height={500}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
           </div>
         </div>
+
 
         <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between">
           <div className="md:w-1/2">
@@ -149,6 +157,7 @@ function Projectpage() {
         </div>
 
         </div>
+
       </div>
     </div>
   );
