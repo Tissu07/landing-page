@@ -1,11 +1,11 @@
 import React from "react";
 import "./feature.css";
 
-function FeatureCard({ imgSrc, heading, paragraph }) {
+function FeatureCard({ imgSrc, heading, paragraph, onClick }) {
   return (
-    <div className="w-80  md:my-0 border-b-2 border-r-2 border-blue-900 relative border-l-2 p-4 rounded-md">
+    <div className="w-80 md:my-0 border-b-2 border-r-2 border-blue-900 relative border-l-2 p-4 rounded-md">
       <img
-        className="h-20 feature-img w-20 absolute -top-10 left-[7.5rem] object-cover "
+        className="h-20 feature-img w-20 absolute -top-10 left-[7.5rem] object-cover"
         src={imgSrc}
         alt="feature image"
       />
@@ -13,7 +13,10 @@ function FeatureCard({ imgSrc, heading, paragraph }) {
         <h1 className="text-center text-white text-xl">{heading}</h1>
         <p className="text-center pt-3 px-2 text-white">{paragraph}</p>
       </div>
-      <div className="shadow-inner border-blue-900 border-2 p-2 text-white rounded-md flex justify-between hover:cursor-pointer hover:bg-blue-900">
+      <div
+        className="shadow-inner border-blue-900 border-2 p-2 text-white rounded-md flex justify-between hover:cursor-pointer hover:bg-blue-900"
+        onClick={onClick}
+      >
         <h1>{heading}</h1>
         <div className="w-4 h-4 py-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
