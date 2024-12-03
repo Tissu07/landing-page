@@ -1,12 +1,16 @@
+"use client"
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { VscChromeClose } from "react-icons/vsc";
 
-function ServiceModal() {
+function ServiceModal({closeModal}) {
   const [show, setShow] = useState(true);
   return (
-    show && (
-      <div className="hidden md:flex flex-row justify-center ">
+    
+      <div className="w-screen flex justify-center">
+        {show && 
+      <div className="hidden md:flex flex-row justify-center z-40">
         <div className="w-[80%] h-[80%] bg-white absolute top-20 rounded-sm">
           <video
             autoPlay
@@ -20,12 +24,12 @@ function ServiceModal() {
             />
             Your browser does not support the video tag.
           </video>
-          <div className=" flex flex-row h-12 justify-between  z-30">
+          <div className="flex flex-row h-12 justify-between  z-30">
             <p className="w-full text-center text-3xl  z-20 text-white py-2">
               {/* SUPER SIMPLE */}
             </p>
             <div className="px-4 text-4xl z-20 absolute right-2 text-white">
-              x
+              <button className="py-2" onClick={closeModal}> <VscChromeClose /></button>
             </div>
           </div>
           <div className="flex flex-row z-20 ">
@@ -150,7 +154,9 @@ function ServiceModal() {
           </div>
         </div>
       </div>
-    )
+}
+      </div>
+
   );
 }
 
